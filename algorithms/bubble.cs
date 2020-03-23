@@ -11,9 +11,10 @@ namespace visualSorting
             {
                 for(int j=0; j<len-i-1; j++)
                 {
-                    if(arr.obj[i] > arr.obj[i+1])
+                    if(arr.obj[j] > arr.obj[j+1])
                     {
                         MyArray.swap(arr, j, j+1);
+                        
                     }
                 }
             }

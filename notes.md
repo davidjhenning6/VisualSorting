@@ -24,6 +24,7 @@
     - will have to set/chose some kind of standard for files
 - could have sorts run asynchronously to "race" 
     - visually racing?
+- basic test scaffolding to test implementations and any changes
 
 ### To Do
 - menu 

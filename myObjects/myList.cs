@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 
 namespace visualSorting
 {
@@ -20,21 +19,21 @@ namespace visualSorting
             arr.obj[b] = temp;
         }
 
-        static public void print(int[] arr)
+        static public void print(int[] print)
         {
-            int len = arr.Length;
+            int len = print.Length;
             for(int i=0; i<len; i++)
             {
-                Console.Write(arr[i]);
+                Console.Write(print[i]);
                 if(i != len-1)
                 {
                     Console.Write(", ");
                 }
+                else
+                {
+                    Console.Write("\n");
+                }
             }
         }
-
-
-
     }
 }
-
