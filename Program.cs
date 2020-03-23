@@ -11,28 +11,29 @@ namespace visualSorting
             //var type = getDataType();//return int 1-3    benched this idea for now
             List<int> inputData = getData();//returns a list of user input
             var data = inputData.ToArray();
+            MyArray arr = new MyArray(data);
             
             switch(algo)
             {
                 case "1":
                     //create merge sort
-                    merge.input(data);
+                    merge.input(arr);
                     break;
                 case "2":
                     //create bubble sort
-                    bubble.sort(data);
+                    bubble.sort(arr);
                     break;
                 case "3":
                     //create quick sort
-                    //quick.sort(data);
+                    //quick.sort(arr.obj);
                     break;
                 case "4":
                     //create insertion sort
-                    //insertion.sort(data);
+                    //insertion.sort(arr.obj);
                     break;
                 case "5":
                     //create heap sort
-                    //heap.sort(data);
+                    //heap.sort(arr.obj);
                     break;
                 default:
                     Console.WriteLine("how did you get here??");
@@ -42,7 +43,7 @@ namespace visualSorting
             Console.WriteLine("Original:");
             printList(inputData);
             Console.WriteLine("Sorted:");
-            MyArray.print(data);
+            MyArray.print(arr.obj);
 
 
         }

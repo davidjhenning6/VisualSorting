@@ -4,10 +4,10 @@ namespace visualSorting
 {
     class merge
     {
-        static public int[] input(int[] array)
+        static public int[] input(MyArray arr)
         {
-            mergeSort(array, 0, array.Length-1);
-            return array;
+            mergeSort(arr.obj, 0, arr.obj.Length-1);
+            return arr.obj;
         }
         
         static private void mergeArr()

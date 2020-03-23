@@ -3,9 +3,8 @@ namespace visualSorting
 {
     class bubble
     {
-        static public int[] sort(int[] data)
+        static public int[] sort(MyArray arr)
         { 
-            MyArray arr = new MyArray(data);
             int len = arr.obj.Length;
             for(int i=0; i<len; i++)
             {
